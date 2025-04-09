@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
 
                 // 개별 체크
                 if (name.isEmpty()) {
-                    textResult.setText("이름을 입력하세요.");
+                    Toast.makeText(MainActivity.this, "이름을 입력하세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (weightStr.isEmpty()) {
-                    textResult.setText("체중을 입력하세요.");
+                    Toast.makeText(MainActivity.this, "체중을 입력하세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (heightStr.isEmpty()) {
-                    textResult.setText("키를 입력하세요.");
+                    Toast.makeText(MainActivity.this, "키를 입력하세요.", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
